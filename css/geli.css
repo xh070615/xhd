@@ -1,0 +1,30 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+ul,li{
+	list-style:none ;
+}
+/*
+ * 头部部分
+ */
+#header{
+	background: #191D3A;
+	height: 58px;
+}
+#header_ul li{
+	float: left;
+	width: 90px;
+	line-height: 58px;
+	text-align: center;
+	font-size: 12px;
+	border-right: 1px solid #252947;
+	color: #818496;
+	padding: 0px 5px;
+}
+#header_main{
+	margin: 0px auto;
+	width: 1000px;
+	height: 90px;
+}
+

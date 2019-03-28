@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet"type="text/css" href="css/daohang.css" />
+	</head>
+	<body>
+	  <nav id="nav">
+	  	<ul id="n">
+	  		<li><a href="">首页</a>
+	  			<dl class="dl" >
+	  				<dt><a href="">服装</a></dt>
+	  				<dt><a href="">服装</a></dt>
+	  				<dt><a href="">服装</a></dt>
+	  			</dl>
+	  		</li>
+	  		<li><a href="">首页</a>
+	  			<dl class="dl" >
+	  				<dt><a href="">服装</a></dt>
+	  				<dt><a href="">服装</a></dt>
+	  				<dt><a href="">服装</a></dt>
+	  			</dl>
+	  		</li>
+	  		<li><a href="">首页</a>
+	  			<dl class="dl" >
+	  				<dt><a href="">服装</a></dt>
+	  				<dt><a href="">服装</a></dt>
+	  				<dt><a href="">服装</a></dt>
+	  			</dl>
+	  		</li>
+	  		<li><a href="">首页</a>
+	  			<dl class="dl" >
+	  				<dt><a href="">服装</a></dt>
+	  				<dt><a href="">服装</a></dt>
+	  				<dt><a href="">服装</a></dt>
+	  			</dl>
+	  		</li>
+	  		<li><a href="">首页</a>
+	  			<dl class="dl" >
+	  				<dt><a href="">服装</a></dt>
+	  				<dt><a href="">服装</a></dt>
+	  				<dt><a href="">服装</a></dt>
+	  			</dl>
+	  		</li>
+	  		<li><a href="">首页</a>
+	  		  <dl class="dl" >
+	  				<dt><a href="">服装</a></dt>
+	  				<dt><a href="">服装</a></dt>
+	  				<dt><a href="">服装</a></dt>
+	  			</dl>
+	  		</li>
+	  		<li><a href="">首页</a>
+	  			<dl class="dl" >
+	  				<dt><a href="">服装</a></dt>
+	  				<dt><a href="">服装</a></dt>
+	  				<dt><a href="">服装</a></dt>
+	  			</dl>
+	  		</li>
+	  		<li><a href="">首页</a>
+	  			<dl class="dl" >
+	  				<dt><a href="">服装</a></dt>
+	  				<dt><a href="">服装</a></dt>
+	  				<dt><a href="">服装</a></dt>
+	  			</dl>
+	  		</li>
+	  	</ul>
+	  </nav>	
+	  <script>
+	  	var ul=document.getElementById("n");
+	  	var a=ul.getElementsByTagName("a");
+	  	for(var i=0;i<a.length;i++){
+	  		a[i].onmouseover=function(e){
+	  			this.style.backgroundColor="yellow";
+	  		    this.style.color="black";
+	  		     var dl=this.nextElementSibling;
+	  		    dl.style.display="block";
+	  		}
+	  		a[i].onmouseout=function(e){
+	  			this.style.backgroundColor="black";
+	  			this.style.color="white";
+	  			 var dl=this.nextElementSibling;
+	  		      dl.style.display="none";
+	  		}
+	  	}
+	  </script>
+		
+	</body>
+
+</html>

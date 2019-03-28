@@ -1,0 +1,31 @@
+#box{
+				position:relative;
+			}
+			#ul{
+				width:590px;
+				height:470px;
+			}
+			#ul li{
+				list-style: none;
+				display:none;
+			}
+			#ol{
+				position:absolute;
+				top:410px;
+				left:240px;
+			}
+			#ol li{
+				list-style: none;
+				float:left;
+				width:10px;
+				height:10px;
+				
+				border-radius: 50%;
+				border:1px solid white;
+				text-align:center;
+				margin-right:5px;
+			}
+			.active{
+				background-color:white;
+				
+			}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet"type="text/css" href="css/lunbo.css" />
+	</head>
+	<body>
+		<div id="box">
+			<ul id="ul">
+				<li style="display: block;">
+				<img src="img/bf36f2769e27bcf10281e5735cebf03d_2014-06-10-10-58-06.jpg" alt="" /></li>
+				<li><img src="img/bd8c57796177034a76ae552d95d69fae_20300001248577147744450859062.jpg" alt="" /></li>
+				<li><img src="img/cg_comic_games_characters_26944_10.jpg" alt="" /></li>
+				<li><img src="img/bf36f2769e27bcf10281e5735cebf03d_2014-06-10-10-58-06.jpg" alt="" /></li>
+			</ul>
+			<ol id="ol">
+				<li class="active"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ol>
+		</div>
+		<script>
+			var ulLi=document.getElementById("ul")
+			        .getElementsByTagName("li");
+			var olLi=document.getElementById("ol")
+			        .getElementsByTagName("li");
+			 var index=0;       
+			var timer=setInterval(fun,1000);  
+			function fun(){
+				ulLi[index].style.display="none";
+				olLi[index].setAttribute("class","");
+				index++;
+				if(index==4){
+					index=0;
+				}
+				ulLi[index].style.display="block";
+				olLi[index].setAttribute("class","active")
+			}
+			var a;
+			for(var i=0;i<olLi.length;i++){
+				olLi[i].index=i; //就是这行是重点了，分别赋予每个li的index值。
+				olLi[i].onmouseover=function(e){
+					clearInterval(timer);
+					a=this.index;
+					console.log(a);
+					for(var j=0;j<olLi.length;j++){
+						olLi[j].setAttribute("class","")
+					}
+				
+					for(var k=0;k<ulLi.length;k++){
+						ulLi[k].style.display="none";
+					}
+					olLi[a].setAttribute("class","active")
+					ulLi[a].style.display="block";
+				}
+			}
+			/*var ul=document.getElementById("ul");
+			ul.onmouseover=function(){
+				clearInterval(timer);
+			}
+			ul.onmouseout=function(){
+				timer=setInterval(fun,1000);
+			}*/
+			
+		</script>
+	</body>
+
+</html>
